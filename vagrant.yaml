@@ -20,12 +20,21 @@ machine:
 
   focal:
     hostname: ubuntu-focal.sources.test
-    ip:       192.168.56.30
+    ip:       192.168.56.32
     cpus:     2
     memory:   512
     username: vagrant
     os:
       box: ubuntu/focal64
+
+  jammy:
+    hostname: ubuntu-jammy.sources.test
+    ip:       192.168.56.33
+    cpus:     2
+    memory:   512
+    username: vagrant
+    os:
+      box: ubuntu/jammy64
 
   stretch:
     hostname: debian-stretch.sources.test

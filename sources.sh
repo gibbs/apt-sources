@@ -2,7 +2,7 @@
 
 source /etc/os-release || exit 1
 
-DIRECTORY="/vagrant/${ID}-${VERSION_CODENAME}/"
+DISTRO=$(echo "${ID}" | awk '{print tolower($0)}')
+SOURCE_PATH="/vagrant/sources/${DISTRO}-${VERSION_CODENAME}.list"
 
-mkdir -p "${DIRECTORY}"
-sudo cp -f /etc/apt/sources.list "${DIRECTORY}"
+sudo cp -f /etc/apt/sources.list "${SOURCE_PATH}"
