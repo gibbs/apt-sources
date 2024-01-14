@@ -56,9 +56,18 @@ machine:
 
   bullseye:
     hostname: debian-bullseye.sources.test
-    ip:       192.168.56.40
+    ip:       192.168.56.42
     cpus:     2
     memory:   512
     username: vagrant
     os:
       box: debian/bullseye64
+
+  bookworm:
+    hostname: debian-bookworm.sources.test
+    ip:       192.168.56.43
+    cpus:     2
+    memory:   512
+    username: vagrant
+    os:
+      box: debian/bookworm64

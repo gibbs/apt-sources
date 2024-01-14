@@ -7,6 +7,7 @@ cloud images. See the `sources` directory.
 
 | Distribution | Version | Codename |
 |--------------|---------|----------|
+| Debian       | 12      | bookworm |
 | Debian       | 11      | bullseye |
 | Debian       | 10      | buster   |
 | Debian       | 9       | stretch  |
